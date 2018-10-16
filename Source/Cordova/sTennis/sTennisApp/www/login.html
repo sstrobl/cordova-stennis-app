@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Passen Sie die Inhaltssicherheitsrichtlinie im META-Tag unten nach Bedarf an. Fügen Sie "default-src" die Option "unsafe-inline" hinzu, um Inline-JavaScript zu aktivieren.
+        Details finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=617521".
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>sTennisApp</title>
+</head>
+<body>
+
+    <div data-role="page" id="sTennis-Login-page">
+
+        <div data-role="header" class="header">
+            <h1 id="app-title">sTennis</h1>
+            <a href="/index.html" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <label for="lblusername">Tennisclub-Url:</label>
+            <input id="txtcluburl" name="cluburl" placeholder="eg. https://stennis.familie-strobl.at" required value="https://stennis.familie-strobl.at" />
+            <label for="lblusername">Benutzername:</label>
+            <input id="txtusername" name="usrname" placeholder="eg. user" required value="steve" />
+            <label for="lblpassword">Passwort:</label>
+            <input id="txtpassword" name="password" placeholder="eg. passwd" required value="steve" />
+            <button id="btnLogin" data-role="button" data-icon="check">Login</button>
+            <label id="signup" />
+        </div>
+
+        <footer data-role="footer" data-position="fixed">
+            <h6><img src="images/logo.png" height="32" />by Stefan Strobl</h6>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/session.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
